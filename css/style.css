@@ -96,6 +96,7 @@ nav a:hover {
 	border-width: 2px;
 	border-style: solid;
 	padding: 16px;
+	width: fit-content;
 }
 
 .style-white {
@@ -111,4 +112,38 @@ nav a:hover {
 .call-to-action {
 	padding: 16px 48px;
 	font-size: 20px;
+}
+
+.gains {
+	display: flex;
+	width: 85%;
+	margin: auto;
+	margin-top: -40px;
+}
+
+.gain-card {
+	display: flex;
+	flex-direction: column;
+	color: var(--primary-white);
+	padding: 48px;
+	gap: 16px;
+
+	h3 {
+		font-size: 56px;
+		font-weight: 700;
+	}
+
+	p {
+		line-height: 24px;
+	}
+}
+
+.gains-left {
+	background-color: var(--tertiary-color);
+	text-align: right;
+	align-items: end;
+}
+
+.gains-right {
+	background-color: #111;
 }
