@@ -30,6 +30,10 @@ a {
 	text-decoration: none;
 }
 
+li {
+	list-style: none;
+}
+
 .intro {
 	background-image: url(../assets/images/hero-section.jpg);
 	min-height: 100vh;
@@ -208,5 +212,69 @@ nav a:hover {
 	&:hover {
 		color: var(--primary-white);
 		background-color: var(--tertiary-color);
+	}
+}
+
+.schedule {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.title {
+	color: var(--tertiary-color);
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.subtitle {
+	color: #343a40;
+	font-size: 56px;
+	font-weight: 700;
+}
+
+.schedule > ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+
+	li {
+		color: var(--tertiary-color);
+	}
+
+	.highlighted {
+		background-color: var(--tertiary-color);
+		color: var(--primary-white);
+	}
+}
+
+.schedule > table {
+	border-collapse: collapse;
+	padding: 32px;
+	width: 85%;
+	margin: auto;
+
+	th,
+	td {
+		border: 1px solid #343a40;
+		padding: 16px;
+	}
+
+	th,
+	td:first-child {
+		background-color: #111;
+		color: var(--primary-white);
+		padding: 16px;
+	}
+
+	td {
+		p:first-child {
+			font-family: var(--header-font);
+			font-weight: 500;
+			color: #343a40;
+			font-size: 20px;
+		}
 	}
 }
