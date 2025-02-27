@@ -147,3 +147,66 @@ nav a:hover {
 .gains-right {
 	background-color: #111;
 }
+
+.experience {
+	display: flex;
+	padding: 48px 0;
+	gap: 32px;
+	width: 85%;
+	margin: auto;
+}
+
+.experience img {
+	height: 540px;
+}
+
+.experience-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+}
+
+.experience-content h2 {
+	font-size: 56px;
+	color: #343a40;
+}
+
+.experience-content > div {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	padding: 20px 0;
+}
+
+.experience-content > section {
+	display: flex;
+	justify-content: space-between;
+	gap: 32px;
+
+	> div {
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+
+	i {
+		font-size: 62px;
+		color: var(--tertiary-color);
+	}
+
+	h4 {
+		font-size: 24px;
+		color: #343a40;
+	}
+}
+
+.style-red {
+	border-color: var(--tertiary-color);
+	color: var(--tertiary-color);
+
+	&:hover {
+		color: var(--primary-white);
+		background-color: var(--tertiary-color);
+	}
+}
